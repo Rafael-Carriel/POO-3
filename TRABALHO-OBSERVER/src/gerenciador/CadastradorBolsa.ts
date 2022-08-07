@@ -1,8 +1,6 @@
-
 import Observer from "../observer/Observer";
-import ICadastrador from "./ICadastrador";
 
-export default class CadastradorBolsa implements ICadastrador{
+export default class CadastradorBolsa{
     private _empresas : Observer [] = [];
     subscribe(empresa : Observer, dolar : number): void {
         console.log("Empresa " + empresa.name + " cadastrada no Bolsa!! Valor do Dolar: " + dolar + ", Valor da ação: R$ " + dolar * empresa.valorEmp);

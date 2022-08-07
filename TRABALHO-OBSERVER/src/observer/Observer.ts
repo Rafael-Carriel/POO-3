@@ -1,6 +1,5 @@
-import IObserver from "./IObserver";
 
-export default class Observer implements IObserver{
+export default class Observer {
     valorEmp : number = 0;
     name : string;
 
